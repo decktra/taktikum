@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Taktikum</title>
 	    <meta name="description" content="Taktikum" />
 	    <meta name="keywords" content="Taktikum" />
@@ -27,41 +28,14 @@
 	</head>
 
 	<body>
-        <!-- TAGLINE START-->
-        <div class="tagline bg-white">
-            <div class="container">                
-                <div class="row">
-                    <div class="col-12">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <ul class="list-unstyled mb-0">
-                                <!-- <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-muted fw-normal"><i data-feather="mail" class="fea icon-sm text-primary"></i> support@Fronter.com</a></li> -->
-                                <li class="list-inline-item mb-0 ms-3"><a href="javascript:void(0)" class="text-muted fw-normal"><i data-feather="map-pin" class="fea icon-sm text-primary"></i> C/Santa Amèlia 20, bajos</a></li>
-                            </ul>
-
-                            <!-- <ul class="list-unstyled social-icon tagline-social mb-0">
-                                <li class="list-inline-item mb-0"><a href="javascript:void(0)"><i class="uil uil-facebook-f h6 mb-0"></i></a></li>
-                                <li class="list-inline-item mb-0"><a href="javascript:void(0)"><i class="uil uil-instagram h6 mb-0"></i></a></li>
-                                <li class="list-inline-item mb-0"><a href="javascript:void(0)"><i class="uil uil-twitter h6 mb-0"></i></a></li>
-                                <li class="list-inline-item mb-0"><a href="javascript:void(0)"><i class="uil uil-linkedin h6 mb-0"></i></a></li>
-                            </ul> -->
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </div><!--end tagline-->
-        <!-- TAGLINE END-->
-
-        <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll sticky tagline-height">
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
             <div class="container">
                 <!-- Logo container-->
-				<a class="logo" href="index-business.html">
-                    <span class="logo-light-mode">
-                        <img src="images/logo-oscuro.png" class="l-dark" alt="" style="height: 50px;">
-                        <img src="images/logo-claro.jpeg" class="l-light" alt=""  style="height: 50px;">
-                    </span>
-                    <img src="images/logo-claro.jpeg" class="logo-dark-mode" alt="" style="height: 50px;">
-                </a>
+				<a class="logo" href="index.html">
+					<img src="images/logo-oscuro.png" class="logo-light-mode" alt="" style="height: 50px;">
+					<img src="images/logo-claro.jpeg" class="logo-dark-mode" alt="" style="height: 50px;">
+				</a>
                 <!-- Logo End -->
 
                 <!-- Start navbar Toggle-->
@@ -81,23 +55,27 @@
                 <!-- End navbar Toggle-->
 
                 <!--Login button Start-->
-               
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item ps-1 mb-0">
+                        <a href="#contacto">
+                            <span class="btn btn-primary d-none d-md-block"> Contacto</span>
+                            <span class="btn btn-icon btn-pills btn-primary d-md-none d-inline-flex"> Contacto</span>
+                        </a>
+                    </li>
+                </ul>
                 <!--Login button End-->
         
                 <div id="navigation">
                     <!-- Navigation Menu-->   
-                    <ul class="navigation-menu nav-light" id="navmenu-nav">
+                    <ul class="navigation-menu" id="navmenu-nav">
                         <li class="has-submenu">
                             <a href="#home">Inicio</a>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="#equipo">Equipo</a>
                         </li>
                         <li class="has-submenu">
                             <a href="#servicios">Servicios</a>
                         </li>
                         <li class="has-submenu">
-                            <a href="#contacto">Contacto</a>
+                            <a href="#equipo">Equipo</a>
                         </li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
@@ -105,38 +83,45 @@
         </header><!--end header-->
         <!-- Navbar End -->
 
-        <!-- Hero Start -->
-        <section class="bg-home zoom-image d-flex align-items-center" id="home">
-            <div class="bg-overlay image-wrap" id="hero-images"></div>
-            <!-- <section class="bg-home d-flex align-items-center" id="home"> -->
-            <div class="bg-overlay bg-linear-gradient-2"></div>
+        <!-- Start Hero -->
+        <section class="bg-half-170 d-table w-100" id="home">
             <div class="container">
-                <div class="row justify-content-center mt-5">
-                    <div class="col-12">
-                        <div class="title-heading text-center">
-                            <h4 class="display-5 text-white title-dark mb-4">Te acompañamos a <br> lograr tus propósitos</h4>
-                            <p class="para-desc text-white-50 mb-0 mx-auto">Te ayudamos a construir tus alas para que tú decidas cuán alto quieres volar</p>
-                        
-                            <div class="mt-4 pt-2">
-                                <a href="#contacto" class="btn btn-primary">Contáctanos</a>
+                <div class="row mt-5 align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="title-heading">
+                            <h4 class="display-5 fw-bold my-4">Te acompañamos a <br> lograr tus propósitos</h4>
+                            <p class="text-muted para-desc mb-0">Te ayudamos a construir tus alas para que tú decidas cuán alto quieres volar</p>
+
+                            <div class="mt-4">
+                                <a href="#servicios" class="btn btn-primary">Descubre más</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 offset-lg-1 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-lg-5 col-6">
+                                <div class="row g-3">
+                                    <div class="col-lg-12 col-md-12">
+                                        <img src="images/digital/02.jpg" class="img-fluid rounded-md" alt="work-image">
+                                    </div><!--end col-->
+    
+                                    <div class="col-lg-12 col-md-12 text-end">
+                                        <img src="images/square/square-warning.png" class="avatar avatar-medium img-fluid rounded-md" alt="work-image">
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end col-->
+
+                            <div class="col-lg-7 col-6">
+                                <img src="images/digital/01.jpg" class="img-fluid rounded-md" alt="work-image">
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
         </section><!--end section-->
-        <div class="position-relative">
-            <div class="home-shape-arrow">
-                <a href="#about"><i class="mdi mdi-arrow-down arrow-icon text-dark h5 shadow-md"></i></a>
-            </div>
-            
-            <div class="shape overflow-hidden text-white">
-                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-                </svg>
-            </div>
-        </div>
-        <!-- Hero End -->
+        <!-- End Hero -->
+
 
 
         <!-- Start -->
@@ -149,11 +134,11 @@
 
                             <div class="about-image-position">
                                 <img src="images/business/about02.jpg" class="img-fluid rounded shadow-lg" alt="">
-                                <div class="play-icon">
+                                <!-- <div class="play-icon">
                                     <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="play-btn lightbox">
                                         <i class="mdi mdi-play text-primary rounded-circle bg-white shadow-lg"></i>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div><!--end col-->
@@ -167,11 +152,11 @@
                                 - Dificultades o trastornos en el aprendizaje<br> 
                                 - Falta de estratégias o hábito de estudio<br> 
                                 - Dificultades para concentrarse<br> 
-                                <br>Psicologia Clinica:<br>
+                                <br>Psicología Clinica:<br>
                                 - Situaciones personales que te hacen sufrir<br> 
                                 - Cambios en la dinámica familiar<br> 
                                 - Dificultades para relacionarte<br> 
-                                <br>Logopedia<br>
+                                <br>Logopedia:<br>
                                 - Desarrollo del habla tardío<br> 
                                 - Dificultades en la pronunciación<br> 
                                 - Dificultades en el lenguaje
@@ -199,11 +184,11 @@
 
                             <div class="about-image-position">
                                 <img src="images/business/about02.jpg" class="img-fluid rounded shadow-lg" alt="">
-                                <div class="play-icon">
+                                <!-- <div class="play-icon">
                                     <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="play-btn lightbox">
                                         <i class="mdi mdi-play text-primary rounded-circle bg-white shadow-lg"></i>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div><!--end col-->
@@ -268,7 +253,7 @@
                                 <i class="uil uil-bill d-block rounded h4 mb-0"></i>
                             </div>
                             <div class="content mt-4">
-                                <a href="page-service-detail.html" class="h5 text-dark title">Psicologia Cognitiva:</a>
+                                <a href="page-service-detail.html" class="h5 text-dark title">Psicología Cognitiva</a>
                                 <p class="text-muted mt-3">Diagnóstic i tractament dels processos que intervenen en el aprenentatge i en el seu ritme de maduració cognitiva</p>
 
                                
@@ -286,7 +271,7 @@
                                 <i class="uil uil-money-withdrawal d-block rounded h4 mb-0"></i>
                             </div>
                             <div class="content mt-4">
-                                <a href="page-service-detail.html" class="h5 text-dark title">Psicopedagogia</a>
+                                <a href="page-service-detail.html" class="h5 text-dark title">Psicopedagogía</a>
                                 <p class="text-muted mt-3">Prevenció, detecció i intervenció en els trastorns de l’aprenentatge o desenvolupament.</p>
 
                                
@@ -369,9 +354,9 @@
                             <p class="text-light para-dark para-desc mx-auto">
                                 Taktikum está formado por un equipo de especialistas de la psicopedagogía, logopedia y psicología, con una fuerte vocación en todos los ámbitos de la educación y la psicología, que comprende bien los procesos de aprendizaje de las diferentes fases del desarrollo del alumnado y quiere guiarte y acompañarte en tu proceso hacia el éxito y el bienestar.
                             </p>
-                            <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="play-btn border border-light mt-4 lightbox">
+                            <!-- <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="play-btn border border-light mt-4 lightbox">
                                 <i data-feather="play" class="fea icon-ex-md text-white title-dark"></i>
-                            </a>
+                            </a> -->
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
@@ -385,7 +370,7 @@
                 <div class="row justify-content-center">
                     <div class="col">
                         <div class="section-title text-center mb-4 pb-2">
-                            <h6 class="text-primary fw-normal mb-2">Testimonial</h6>
+                            <h6 class="text-primary fw-normal mb-2">Testimonios</h6>
                             <h4 class="title mb-4">What our customer <br> say about us</h4>
                         </div>
                     </div><!--end col-->
@@ -592,7 +577,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Anna Olivella</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Anna Olivella</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Directora y Psicopedagoga</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -611,7 +596,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Laura Krauel</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Laura Krauel</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicóloga nº colegiada 17218</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -630,7 +615,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Marta Gómez</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Marta Gómez</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicopedagoga</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -649,7 +634,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Alba Farran</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Alba Farran</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Logopeda y psicóloga nº colegiada</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -668,7 +653,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Pablo Pons</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Pablo Pons</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicólogo nº colegiado 30071</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -687,7 +672,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Marta Perejuan</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Marta Perejuan</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicóloga</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -706,7 +691,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Paula Peña</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Paula Peña</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicóloga</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -725,7 +710,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Gisel Casals</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Gisel Casals</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicóloga y Psicopedagoga</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -744,7 +729,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Mariona Costa</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Mariona Costa</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicopedagoga</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -763,7 +748,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Blanca Calvó</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Blanca Calvó</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicopedagoga</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -782,7 +767,7 @@
                                 <div class="card-overlay rounded"></div>
 
                                 <div class="content">
-                                    <a href="#" class="text-white title-dark h5 mb-0 title">Mar Sabaté</a>
+                                    <a class="text-white title-dark h5 mb-0 title">Mar Sabaté</a>
                                     <h6 class="text-white-50 mb-0 fw-normal mt-1 designation">Psicóloga nº colegiado 30296</h6>
 
                                     <ul class="list-unstyled team-social mb-0 mt-3">
@@ -877,18 +862,18 @@
                                     <a href="#" class="logo-footer">
                                         <img src="images/logo-claro.jpeg" alt="" style="width:200px">
                                     </a>
-                                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                    <!-- <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
                                         <li class="list-inline-item"><a href="https://1.envato.market/fronter" target="_blank" class="rounded"><i class="uil uil-shopping-cart align-middle" title="Buy Now"></i></a></li>
-                                <li class="list-inline-item"><a href="https://dribbble.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.behance.net/shreethemes" target="_blank" class="rounded"><i class="uil uil-behance" title="Behance"></i></a></li>
-                                <li class="list-inline-item"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="rounded"><i class="uil uil-linkedin" title="Linkedin"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.facebook.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="rounded"><i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
-                                <li class="list-inline-item"><a href="https://twitter.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="mailto:support@shreethemes.in" class="rounded"><i class="uil uil-envelope align-middle" title="email"></i></a></li>
-                                
-                                <li class="list-inline-item"><a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank" class="rounded"><i class="uil uil-file align-middle" title="customization"></i></a></li>
-                                    </ul><!--end icon-->
+                                        <li class="list-inline-item"><a href="https://dribbble.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-dribbble align-middle" title="dribbble"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.behance.net/shreethemes" target="_blank" class="rounded"><i class="uil uil-behance" title="Behance"></i></a></li>
+                                        <li class="list-inline-item"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="rounded"><i class="uil uil-linkedin" title="Linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.facebook.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-facebook-f align-middle" title="facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="rounded"><i class="uil uil-instagram align-middle" title="instagram"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://twitter.com/shreethemes" target="_blank" class="rounded"><i class="uil uil-twitter align-middle" title="twitter"></i></a></li>
+                                        <li class="list-inline-item"><a href="mailto:support@shreethemes.in" class="rounded"><i class="uil uil-envelope align-middle" title="email"></i></a></li>
+                                        
+                                        <li class="list-inline-item"><a href="https://forms.gle/QkTueCikDGqJnbky9" target="_blank" class="rounded"><i class="uil uil-file align-middle" title="customization"></i></a></li>
+                                    </ul>end icon -->
                                 </div><!--end col-->
                                 
                                 <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
