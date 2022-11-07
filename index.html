@@ -28,14 +28,41 @@
 	</head>
 
 	<body>
-        <!-- Navbar Start -->
-        <header id="topnav" class="defaultscroll sticky">
+        <!-- TAGLINE START-->
+        <div class="tagline bg-white">
+            <div class="container">                
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <ul class="list-unstyled mb-0">
+                                <!-- <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-muted fw-normal"><i data-feather="mail" class="fea icon-sm text-primary"></i> support@Fronter.com</a></li> -->
+                                <li class="list-inline-item mb-0 ms-3"><a href="javascript:void(0)" class="text-muted fw-normal"><i data-feather="map-pin" class="fea icon-sm text-primary"></i> C/Santa Amèlia 20, bajos</a></li>
+                            </ul>
+
+                            <!-- <ul class="list-unstyled social-icon tagline-social mb-0">
+                                <li class="list-inline-item mb-0"><a href="javascript:void(0)"><i class="uil uil-facebook-f h6 mb-0"></i></a></li>
+                                <li class="list-inline-item mb-0"><a href="javascript:void(0)"><i class="uil uil-instagram h6 mb-0"></i></a></li>
+                                <li class="list-inline-item mb-0"><a href="javascript:void(0)"><i class="uil uil-twitter h6 mb-0"></i></a></li>
+                                <li class="list-inline-item mb-0"><a href="javascript:void(0)"><i class="uil uil-linkedin h6 mb-0"></i></a></li>
+                            </ul>end icon -->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end tagline-->
+        <!-- TAGLINE END-->
+
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky tagline-height">
             <div class="container">
                 <!-- Logo container-->
-				<a class="logo" href="index.html">
-					<img src="images/logo-oscuro.png" class="logo-light-mode" alt="" style="height: 50px;">
-					<img src="images/logo-claro.jpeg" class="logo-dark-mode" alt="" style="height: 50px;">
-				</a>
+				<a class="logo" href="index-business.html">
+                    <span class="logo-light-mode">
+                        <img src="images/logo-oscuro.png" class="l-dark" alt="" style="height: 50px;">
+                        <img src="images/logo-claro.jpeg" class="l-light" alt="" style="height: 50px;">
+                    </span>
+                    <img src="images/logo-claro.jpeg" class="logo-dark-mode" alt="" style="height: 50px;">
+                </a>
                 <!-- Logo End -->
 
                 <!-- Start navbar Toggle-->
@@ -55,19 +82,12 @@
                 <!-- End navbar Toggle-->
 
                 <!--Login button Start-->
-                <ul class="buy-button list-inline mb-0">
-                    <li class="list-inline-item ps-1 mb-0">
-                        <a href="#contacto">
-                            <span class="btn btn-primary d-none d-md-block"> Contacto</span>
-                            <span class="btn btn-icon btn-pills btn-primary d-md-none d-inline-flex"><i class="uil uil-envelope"></i></span>
-                        </a>
-                    </li>
-                </ul>
+               
                 <!--Login button End-->
         
                 <div id="navigation">
                     <!-- Navigation Menu-->   
-                    <ul class="navigation-menu" id="navmenu-nav">
+                    <ul class="navigation-menu nav-light" id="navmenu-nav">
                         <li class="has-submenu">
                             <a href="#home">Inicio</a>
                         </li>
@@ -77,51 +97,35 @@
                         <li class="has-submenu">
                             <a href="#equipo">Equipo</a>
                         </li>
+                        <li class="has-submenu">
+                            <a href="#contacto">Contacto</a>
+                        </li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
 
-        <!-- Start Hero -->
-        <section class="bg-half-170 d-table w-100" id="home">
+        <!-- Hero Start -->
+        <section class="bg-home zoom-image d-flex align-items-center" id="home">
+            <div class="bg-overlay image-wrap" id="hero-images"></div>
+            <!-- <section class="bg-home d-flex align-items-center" id="home"> -->
+            <div class="bg-overlay bg-linear-gradient-2"></div>
             <div class="container">
-                <div class="row mt-5 align-items-center">
-                    <div class="col-lg-5 col-md-6">
-                        <div class="title-heading">
-                            <h4 class="display-5 fw-bold my-4">Te acompañamos a <br> lograr tus propósitos</h4>
-                            <p class="text-muted para-desc mb-0">Te ayudamos a construir tus alas para que tú decidas cuán alto quieres volar</p>
-
-                            <div class="mt-4">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12">
+                        <div class="title-heading text-center">
+                            <h4 class="display-5 text-white title-dark mb-4">Te acompañamos en tu camino <br> al éxito y al bienestar</h4>
+                            <p class="para-desc text-white-50 mb-0 mx-auto">Te ayudamos a construir tus alas para que tú decidas cuán alto quieres volar</p>
+                        
+                            <div class="mt-4 pt-2">
                                 <a href="#servicios" class="btn btn-primary">Descubre más</a>
                             </div>
                         </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-6 offset-lg-1 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="row g-3 align-items-center">
-                            <div class="col-lg-5 col-6">
-                                <div class="row g-3">
-                                    <div class="col-lg-12 col-md-12">
-                                        <img src="images/digital/02.jpg" class="img-fluid rounded-md" alt="work-image">
-                                    </div><!--end col-->
-    
-                                    <div class="col-lg-12 col-md-12 text-end">
-                                        <img src="images/square/square-warning.png" class="avatar avatar-medium img-fluid rounded-md" alt="work-image">
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </div><!--end col-->
-
-                            <div class="col-lg-7 col-6">
-                                <img src="images/digital/01.jpg" class="img-fluid rounded-md" alt="work-image">
-                            </div><!--end col-->
-                        </div><!--end row-->
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
+                    </div>
+                </div>
+            </div>
         </section><!--end section-->
-        <!-- End Hero -->
-
 
 
         <!-- Start -->
@@ -195,8 +199,8 @@
 
                     <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div class="section-title ms-lg-5">
-                            <h6 class="text-primary fw-normal">Mini titulo</h6>
-                            <h4 class="title mb-4">Titulo</h4>
+                            <h6 class="text-primary fw-normal">Siempre contigo</h6>
+                            <h4 class="title mb-4">Te acompañamos</h4>
                             <p class="text-muted">
                                 En Taktikum, guiamos, acompañamos, educamos y enseñamos incluyendo elementos intelectivos, prácticos y emocionales en todas nuestras sesiones, para poder proveer a los alumnos lo que necesitan en función de su momento evolutivo.
                             </p>
@@ -232,11 +236,11 @@
                     <div class="col-lg-4 col-sm-6 mt-4 pt-2">
                         <div class="card features feature-primary feature-clean feature-transition p-4 border-0 shadow rounded overflow-hidden">
                             <div class="icons text-center rounded">
-                                <i class="uil uil-presentation-line d-block rounded h4 mb-0"></i>
+                                <i class="uil uil-heart d-block rounded h4 mb-0"></i>
                             </div>
                             <div class="content mt-4">
                                 <a href="page-service-detail.html" class="h5 text-dark title">Psicología clinica</a>
-                                <p class="text-muted mt-3">avaluació, diagnóstic, tractament i rehabilitació de totes aquelles qüestions que afecten a la salud mental i que poden generar malestar o patiment.</p>
+                                <p class="text-muted mt-3">Evaluación, diagnóstico, tratamiento y rehabilitación de todas esas cuestiones que afectan a la salud mental y que pueden generar malestar o sufrimiento</p>
 
                                
                             </div>
@@ -250,11 +254,11 @@
                     <div class="col-lg-4 col-sm-6 mt-4 pt-2">
                         <div class="card features feature-primary feature-clean feature-transition p-4 border-0 shadow rounded overflow-hidden">
                             <div class="icons text-center rounded">
-                                <i class="uil uil-bill d-block rounded h4 mb-0"></i>
+                                <i class="uil uil-comment d-block rounded h4 mb-0"></i>
                             </div>
                             <div class="content mt-4">
                                 <a href="page-service-detail.html" class="h5 text-dark title">Psicología Cognitiva</a>
-                                <p class="text-muted mt-3">Diagnóstic i tractament dels processos que intervenen en el aprenentatge i en el seu ritme de maduració cognitiva</p>
+                                <p class="text-muted mt-3">Diagnóstico y tratamiento de los procesos que intervienen en el aprendizaje y en su ritmo de maduración cognitiva.</p>
 
                                
                             </div>
@@ -268,11 +272,11 @@
                     <div class="col-lg-4 col-sm-6 mt-4 pt-2">
                         <div class="card features feature-primary feature-clean feature-transition p-4 border-0 shadow rounded overflow-hidden">
                             <div class="icons text-center rounded">
-                                <i class="uil uil-money-withdrawal d-block rounded h4 mb-0"></i>
+                                <i class="uil uil-edit d-block rounded h4 mb-0"></i>
                             </div>
                             <div class="content mt-4">
                                 <a href="page-service-detail.html" class="h5 text-dark title">Psicopedagogía</a>
-                                <p class="text-muted mt-3">Prevenció, detecció i intervenció en els trastorns de l’aprenentatge o desenvolupament.</p>
+                                <p class="text-muted mt-3">Prevención, detección e intervención en los trastornos del aprendizaje o desarrollo</p>
 
                                
                             </div>
@@ -286,29 +290,11 @@
                     <div class="col-lg-4 col-sm-6 mt-4 pt-2">
                         <div class="card features feature-primary feature-clean feature-transition p-4 border-0 shadow rounded overflow-hidden">
                             <div class="icons text-center rounded">
-                                <i class="uil uil-presentation-line d-block rounded h4 mb-0"></i>
+                                <i class="uil uil-font d-block rounded h4 mb-0"></i>
                             </div>
                             <div class="content mt-4">
                                 <a href="page-service-detail.html" class="h5 text-dark title">Logopedia</a>
-                                <p class="text-muted mt-3">Prevenció, detecció, evaluació, diagnóstic i tractament dels trastorns del llenguatge i la comunicació</p>
-
-                               
-                            </div>
-
-                            <div class="feature-ovelay-one"></div>
-                            <div class="feature-ovelay-two"></div>
-                            <div class="feature-ovelay-three"></div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-4 col-sm-6 mt-4 pt-2">
-                        <div class="card features feature-primary feature-clean feature-transition p-4 border-0 shadow rounded overflow-hidden">
-                            <div class="icons text-center rounded">
-                                <i class="uil uil-usd-circle d-block rounded h4 mb-0"></i>
-                            </div>
-                            <div class="content mt-4">
-                                <a href="page-service-detail.html" class="h5 text-dark title">Seguiment escolar</a>
-                                <p class="text-muted mt-3">acompanyament de l’alumnat per guiar-los en el seu procés d’aprenentatge i implementar la seves estratègies</p>
+                                <p class="text-muted mt-3">Prevención, detección, evaluación, diagnóstico y tratamiento de los trastornos del lenguaje y la comunicación</p>
 
                                
                             </div>
@@ -325,8 +311,26 @@
                                 <i class="uil uil-invoice d-block rounded h4 mb-0"></i>
                             </div>
                             <div class="content mt-4">
+                                <a href="page-service-detail.html" class="h5 text-dark title">Seguiment escolar</a>
+                                <p class="text-muted mt-3">Acompañamiento del alumnado para guiarlos en su proceso de aprendizaje e implementar las estrategias.
+
+                               
+                            </div>
+
+                            <div class="feature-ovelay-one"></div>
+                            <div class="feature-ovelay-two"></div>
+                            <div class="feature-ovelay-three"></div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-sm-6 mt-4 pt-2">
+                        <div class="card features feature-primary feature-clean feature-transition p-4 border-0 shadow rounded overflow-hidden">
+                            <div class="icons text-center rounded">
+                                <i class="uil uil-hospital d-block rounded h4 mb-0"></i>
+                            </div>
+                            <div class="content mt-4">
                                 <a href="page-service-detail.html" class="h5 text-dark title">Psiquiatria</a>
-                                <p class="text-muted mt-3">derivem a especialistes externs.</p>
+                                <p class="text-muted mt-3">Derivamos a especialistas externos.</p>
 
                                
                             </div>
@@ -364,201 +368,7 @@
         </section><!--end section-->
         <!-- CTA End -->
 
-        <!-- Start Testimonial -->
-        <section class="section" id="testimonial">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <div class="section-title text-center mb-4 pb-2">
-                            <h6 class="text-primary fw-normal mb-2">Testimonios</h6>
-                            <h4 class="title mb-4">What our customer <br> say about us</h4>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-12 mt-4">
-                        <div class="tiny-three-item">
-                            <div class="tiny-slider client-testi">
-                                <div class="card border-0 bg-white">
-                                    <div class="card-body p-4 rounded shadow m-2">
-                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
-
-                                        <p class="text-muted fst-italic mb-0">" Taktikum ens va cambiar la vida. Vam arribar per casualitat en un moment de incertesa i desconeixement,  i l´Anna , la seva directora, desde el primer minut ha estat SEMPRE ajudant-nos, escoltant-nos i la seva implicació ha sigut brutal.
-                                            He portat els meus dos fills, un d´ells encara hi va, i el tracte ha sigut i és exquisit. Bons consells, bones classes, bona dinàmica, tot ha fluit.
-                                            No tinc paraules per agraïr el seu recolzament durant tots aquests anys. També per la Marta. GRÀCIES PER TOT
-                                            . "</p>
-                                    
-                                        <div class="d-flex mt-4">
-                                            <img src="images/client/01.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
-                                            <div class="flex-1 ms-3">
-                                                <h6 class="mb-0">Irene Carreras</h6>
-                                                <!-- <small class="text-muted">Product Manager</small> -->
-                                            </div>
-                                        </div>
-
-                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tiny-slider client-testi">
-                                <div class="card border-0 bg-white">
-                                    <div class="card-body p-4 rounded shadow m-2">
-                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
-
-                                        <p class="text-muted fst-italic mb-0">" Taktikum per nosaltres ha sigut una família, una segona casa, un lloc on a més d’ajudar-nos a nivell acadèmic, ens ha ajudat a ser les persones que som a dia de avui. 
-                                            La confiança i seguretat que ens transmetia, l’apropament que passava més enllà de ser un estudiant i un professor a una gran amistat. 
-                                             
-                                            Taktikum ens ha demostrat valors com la paciència, la perseverança, el creure en un mateix i el seguir lluitant fins obtenir els propis objectius sense rendir-se. També ens ha ajudat a ser positius amb nosaltres mateixos i a aprendre dels propis errors.
-                                             
-                                            Des de el primer dia que vàrem entrar a Taktikum, ens vam sentir molt ben acollits, ja per la seva amabilitat com per la seva atenció i preocupació. Parlàvem dels nostres problemes tant de dintre l’escola com a fora, sense jutjar-nos, tot el contrari, ens recolzaven i entenien. 
-                                             
-                                            Moltes gracies a tot l’equip de Taktikum; especialment a l’Anna per aguantar-nos tots  aquests anys.
-                                            Una abraçada molt gran,
-                                             "</p>
-                                    
-                                        <div class="d-flex mt-4">
-                                            <img src="images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
-                                            <div class="flex-1 ms-3">
-                                                <h6 class="mb-0">Sequi i Mat</h6>
-                                                <!-- <small class="text-muted">Product Manager</small> -->
-                                            </div>
-                                        </div>
-
-                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tiny-slider client-testi">
-                                <div class="card border-0 bg-white">
-                                    <div class="card-body p-4 rounded shadow m-2">
-                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
-
-                                        <p class="text-muted fst-italic mb-0">" TAKTIKUM en mi familia ha sido sinónimo de TRANQUILIDAD
- 
-                                            Cuando te enfrentas a una situación desconocida valoras mucho la orientación y el acompañamiento. 
-                                             
-                                            Muchas veces necesitas una segunda opinión y un entorno extra escolar para reforzar el desarrollo natural de tu hijo.
-                                             
-                                            Taktikum te ofrece un disgnostico y plan de acción que se adapta a cada necesidad de manera totalmente individualizada.
-                                             
-                                            Tienes la tranquilidad de saber que son profesionales cualificados que saben lo que hacen, que acompañan al alumno en todo el proceso.
-                                             
-                                            Puedes contar con su apoyo a lo largo del curso porque sabes que se preocupan y sobre todo se ocupan día a día con motivación, alegría y soluciones adaptadas 
-                                             
-                                            Tienes la tranquilidad de compartir objetivos con una comunicación constante y cercana transmitiendo calma y abordando cada tema de forma personal con un equipo humano que te facilita cada etapa en un lugar adaptado al alumno y a sus necesidades.
-                                             
-                                            Tu hijo se siente seguro y tu vas viendo como los resultados van apareciendo y los obstáculos se van salvando.
-                                             
-                                            Nosotros recomendamos Taktikum siempre a todas las familias que necesitan una mano amiga con la que recorrer el a veces no fácil camino de la enseñanza academica.
-                                             "</p>
-                                    
-                                        <div class="d-flex mt-4">
-                                            <img src="images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
-                                            <div class="flex-1 ms-3">
-                                                <h6 class="mb-0">Yolanda</h6>
-                                                <!-- <small class="text-muted">Product Manager</small> -->
-                                            </div>
-                                        </div>
-
-                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="tiny-slider client-testi">
-                                <div class="card border-0 bg-white">
-                                    <div class="card-body p-4 rounded shadow m-2">
-                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
-
-                                        <p class="text-muted fst-italic mb-0">" Hace 4 años que conocimos a Anna y a su ESTUPENDO equipo. Llegamos muy inseguros y perdidos con la situación de Álvaro y a día de hoy, Taktikum ya es como parte de la familia. Han sabido ayudar a nuestro hijo en todas y cada una de las problemáticas psicológicas, fonéticas y lingüísticas que presentaba.  Que ayuden así a tu hijo, es de agradecer, ¡y mucho! "</p>
-                                    
-                                        <div class="d-flex mt-4">
-                                            <img src="images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
-                                            <div class="flex-1 ms-3">
-                                                <h6 class="mb-0">Cristina LL</h6>
-                                                <!-- <small class="text-muted">Product Manager</small> -->
-                                            </div>
-                                        </div>
-
-                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
-            <!-- Partners start -->
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-2 col-md-2 col-6 py-2">
-                        <div class="text-center">
-                            <img src="images/logos/blanquerna.jpg" class="avatar avatar-md-md w-auto" style="width:20px" alt="">
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-2 col-md-2 col-6 py-2">
-                        <div class="text-center">
-                            <img src="images/logos/igain.png" class="avatar avatar-md-md w-auto" alt="">
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-6 py-2">
-                        <div class="text-center">
-                            <img src="images/logos/unir.jpg" class="avatar avatar-md-md w-auto" alt="">
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-6 py-2">
-                        <div class="text-center">
-                            <img src="images/logos/ub.png" class="avatar avatar-md-md w-auto" alt="">
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-6 py-2">
-                        <div class="text-center">
-                            <img src="images/logos/uab.png" class="avatar avatar-md-md w-auto" alt="">
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-6 py-2">
-                        <div class="text-center">
-                            <img src="images/logos/uoc.jpg.webp" class="avatar avatar-md-md w-auto"  style="width:20px" alt="">
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-            <!-- Partners End -->
-
+        <section class="section">
             <div id="equipo" class="container mt-100 mt-60">
                 <div class="row justify-content-center">
                     <div class="col">
@@ -781,6 +591,299 @@
 
                 </div><!--end row-->
             </div><!--end container-->
+        </section>
+
+        <!-- Start Testimonial -->
+        <section class="section" id="testimonial">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h6 class="text-primary fw-normal mb-2">Testimonios</h6>
+                            <h4 class="title mb-4">What our customer <br> say about us</h4>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-12 mt-4">
+                        <div class="tiny-three-item">
+                            <div class="tiny-slider client-testi">
+                                <div class="card border-0 bg-white">
+                                    <div class="card-body p-4 rounded shadow m-2">
+                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
+
+                                        <p class="text-muted fst-italic mb-0">"Taktikum ens va cambiar la vida. Vam arribar per casualitat en un moment de incertesa i desconeixement,  i l´Anna , la seva directora, desde el primer minut ha estat SEMPRE ajudant-nos, escoltant-nos i la seva implicació ha sigut brutal.
+                                            He portat els meus dos fills, un d´ells encara hi va, i el tracte ha sigut i és exquisit. Bons consells, bones classes, bona dinàmica, tot ha fluit.
+                                            No tinc paraules per agraïr el seu recolzament durant tots aquests anys. També per la Marta. GRÀCIES PER TOT.
+                                            "</p>
+                                    
+                                        <div class="d-flex mt-4">
+                                            <img src="images/client/01.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
+                                            <div class="flex-1 ms-3">
+                                                <h6 class="mb-0">Irene Carreras</h6>
+                                                <!-- <small class="text-muted">Product Manager</small> -->
+                                            </div>
+                                        </div>
+
+                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tiny-slider client-testi">
+                                <div class="card border-0 bg-white">
+                                    <div class="card-body p-4 rounded shadow m-2">
+                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
+
+                                        <p class="text-muted fst-italic mb-0">"
+                                            Taktikum per nosaltres ha sigut una família, una segona casa, un lloc on a més d’ajudar-nos a nivell acadèmic, ens ha ajudat a ser les persones que som a dia de avui. 
+La confiança i seguretat que ens transmetia, l’apropament que passava més enllà de ser un estudiant i un professor a una gran amistat. 
+ 
+Taktikum ens ha demostrat valors com la paciència, la perseverança, el creure en un mateix i el seguir lluitant fins obtenir els propis objectius sense rendir-se. També ens ha ajudat a ser positius amb nosaltres mateixos i a aprendre dels propis errors.
+ 
+Des de el primer dia que vàrem entrar a Taktikum, ens vam sentir molt ben acollits, ja per la seva amabilitat com per la seva atenció i preocupació. Parlàvem dels nostres problemes tant de dintre l’escola com a fora, sense jutjar-nos, tot el contrari, ens recolzaven i entenien. 
+ 
+Moltes gracies a tot l’equip de Taktikum; especialment a l’Anna per aguantar-nos tots  aquests anys.
+Una abraçada molt gran,
+
+                                             "</p>
+                                    
+                                        <div class="d-flex mt-4">
+                                            <img src="images/client/02.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
+                                            <div class="flex-1 ms-3">
+                                                <h6 class="mb-0">Sequi i Mat</h6>
+                                                <!-- <small class="text-muted">Product Manager</small> -->
+                                            </div>
+                                        </div>
+
+                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tiny-slider client-testi">
+                                <div class="card border-0 bg-white">
+                                    <div class="card-body p-4 rounded shadow m-2">
+                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
+
+                                        <p class="text-muted fst-italic mb-0">" 
+                                            TAKTIKUM en mi familia ha sido sinónimo de TRANQUILIDAD
+ 
+Cuando te enfrentas a una situación desconocida valoras mucho la orientación y el acompañamiento. 
+ 
+Muchas veces necesitas una segunda opinión y un entorno extra escolar para reforzar el desarrollo natural de tu hijo.
+ 
+Taktikum te ofrece un disgnostico y plan de acción que se adapta a cada necesidad de manera totalmente individualizada.
+ 
+Tienes la tranquilidad de saber que son profesionales cualificados que saben lo que hacen, que acompañan al alumno en todo el proceso.
+ 
+Puedes contar con su apoyo a lo largo del curso porque sabes que se preocupan y sobre todo se ocupan día a día con motivación, alegría y soluciones adaptadas 
+ 
+Tienes la tranquilidad de compartir objetivos con una comunicación constante y cercana transmitiendo calma y abordando cada tema de forma personal con un equipo humano que te facilita cada etapa en un lugar adaptado al alumno y a sus necesidades.
+ 
+Tu hijo se siente seguro y tu vas viendo como los resultados van apareciendo y los obstáculos se van salvando.
+ 
+Nosotros recomendamos Taktikum siempre a todas las familias que necesitan una mano amiga con la que recorrer el a veces no fácil camino de la enseñanza academica
+
+                                             "</p>
+                                    
+                                        <div class="d-flex mt-4">
+                                            <img src="images/client/04.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
+                                            <div class="flex-1 ms-3">
+                                                <h6 class="mb-0">Yolanda</h6>
+                                                <!-- <small class="text-muted">Product Manager</small> -->
+                                            </div>
+                                        </div>
+
+                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tiny-slider client-testi">
+                                <div class="card border-0 bg-white">
+                                    <div class="card-body p-4 rounded shadow m-2">
+                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
+
+                                        <p class="text-muted fst-italic mb-0">" Hace 4 años que conocimos a Anna y a su ESTUPENDO equipo. Llegamos muy inseguros y perdidos con la situación de Álvaro y a día de hoy, Taktikum ya es como parte de la familia. Han sabido ayudar a nuestro hijo en todas y cada una de las problemáticas psicológicas, fonéticas y lingüísticas que presentaba.  Que ayuden así a tu hijo, es de agradecer, ¡y mucho! "</p>
+                                    
+                                        <div class="d-flex mt-4">
+                                            <img src="images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
+                                            <div class="flex-1 ms-3">
+                                                <h6 class="mb-0">Cristina LL</h6>
+                                                <!-- <small class="text-muted">Product Manager</small> -->
+                                            </div>
+                                        </div>
+
+                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slider client-testi">
+                                <div class="card border-0 bg-white">
+                                    <div class="card-body p-4 rounded shadow m-2">
+                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
+
+                                        <p class="text-muted fst-italic mb-0">" 
+                                            Descubrimos el centro Taktikum i La directora, Anna, nos dió tiempo para la primera entrevista e inmediatamente sentimos su actitud humana y cercanía emocional. Explicó ejemplos de niños que afrontan los mismos problemas que nuestro hijo. Sentimos comprensión y apoyo directo, como si ya pertenecieramos al centro. También nos gustó que Anna sea responsable de la terapia infantil; siempre sigue el progreso de cada niño.
+ 
+El centro ha sido un apoyo sólido en la evolución de nuestro hijo. Hizo grandes progresos, ganó confianza y, si era necesario, Anna recomendaba otro centro para un diagnóstico más profundo. En general, Taktikum se ha convertido en un segundo hogar para nosotros que recomendamos sin dudarlo.
+
+                                            "</p>
+                                    
+                                        <div class="d-flex mt-4">
+                                            <img src="images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
+                                            <div class="flex-1 ms-3">
+                                                <h6 class="mb-0">Agathe Bay</h6>
+                                                <!-- <small class="text-muted">Product Manager</small> -->
+                                            </div>
+                                        </div>
+
+                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slider client-testi">
+                                <div class="card border-0 bg-white">
+                                    <div class="card-body p-4 rounded shadow m-2">
+                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
+
+                                        <p class="text-muted fst-italic mb-0">" 
+                                            Después de 3 años que Carlota ha ido a Taktikum, la mejoría en ella a nivel personal y académica ha sido considerable. Ahora, tanto en casa como en el colegio vemos que ha superado con creces su autoestima, a ser más autónoma, mejorado su comprensión y a buscar herramientas para solucionar cualquier problema que se le presente. Ahora Carlota ya vuela sola con las alas que hemos ido tejiendo entre todos. Gracias.
+
+                                            "</p>
+                                    
+                                        <div class="d-flex mt-4">
+                                            <img src="images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
+                                            <div class="flex-1 ms-3">
+                                                <h6 class="mb-0">Olga Carreño</h6>
+                                                <!-- <small class="text-muted">Product Manager</small> -->
+                                            </div>
+                                        </div>
+
+                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tiny-slider client-testi">
+                                <div class="card border-0 bg-white">
+                                    <div class="card-body p-4 rounded shadow m-2">
+                                        <i class="mdi mdi-format-quote-open fs-1 text-primary"></i>
+
+                                        <p class="text-muted fst-italic mb-0">" 
+                                            Sólo tenemos palabras de agradecimiento para describir nuestra experiencia en Taktikum. 
+Una de nuestra hijas está recibiendo por segundo año consecutivo clases de refuerzo que le están dando el apoyo y las motivaciones suficientes para seguir con sus estudios. Además, la comunicación entre Taktikum y el colegio facilita la labor y el enfoque de las sesiones.
+La familiaridad y la cercanía con todos los profesionales de Taktikum hace que, como padres, nos sintamos tranquilos sabiendo que estamos en buenas manos. Es por todo ello que no dudamos en recomendar Taktiku, que cumple con todas nuestras expectativas.
+
+                                            "</p>
+                                    
+                                        <div class="d-flex mt-4">
+                                            <img src="images/client/05.jpg" class="avatar avatar-md-sm rounded-circle shadow-md" alt="">
+                                            <div class="flex-1 ms-3">
+                                                <h6 class="mb-0">Irene & Carlos</h6>
+                                                <!-- <small class="text-muted">Product Manager</small> -->
+                                            </div>
+                                        </div>
+
+                                        <ul class="list-unstyled mb-0 mt-3 text-warning h5">
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                            <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <!-- Partners start -->
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-6 py-2">
+                        <div class="text-center">
+                            <img src="images/logos/blanquerna.jpg" class="avatar avatar-md-md w-auto" style="width:20px" alt="">
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-2 col-md-2 col-6 py-2">
+                        <div class="text-center">
+                            <img src="images/logos/igain.png" class="avatar avatar-md-md w-auto" alt="">
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-sm-1 col-6 py-2">
+                        <div class="text-center">
+                            <img src="images/logos/unir.jpg" class="avatar avatar-md-md w-auto" alt="">
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-sm-1 col-6 py-2">
+                        <div class="text-center">
+                            <img src="images/logos/ub.png" class="avatar avatar-md-md w-auto" alt="">
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-sm-1 col-6 py-2">
+                        <div class="text-center">
+                            <img src="images/logos/uab.png" class="avatar avatar-md-md w-auto" alt="">
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-2 col-sm-1 col-6 py-2">
+                        <div class="text-center">
+                            <img src="images/logos/uoc.jpg.webp" class="avatar avatar-md-md w-auto"  style="width:20px" alt="">
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            <!-- Partners End -->
+
+            
         </section><!--end section-->
         <!-- End -->
 
