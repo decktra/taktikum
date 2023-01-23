@@ -72,7 +72,7 @@ if(document.getElementsByClassName('tiny-three-item').length > 0) {
         mouseDrag: true,
         loop: true,
         rewind: true,
-        autoplay: true,
+        autoplay: false,
         autoplayButtonOutput: false,
         autoplayTimeout: 3000,
         navPosition: "bottom",
