@@ -74,8 +74,8 @@ if(document.getElementsByClassName('tiny-three-item').length > 0) {
         rewind: true,
         autoplay: false,
         autoplayButtonOutput: false,
-        autoplayTimeout: 3000,
-        navPosition: "bottom",
+        autoplayTimeout: 6000,
+        navPosition: "top",
         speed: 400,
         gutter: 12,
         responsive: {
